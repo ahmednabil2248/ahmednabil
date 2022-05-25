@@ -4,6 +4,12 @@ const nextConfig = {
 };
 
 module.exports = {
+  i18n: {
+    locales: ["en-US", "ar"],
+    defaultLocale: "ar",
+    localeDetection: false,
+  },
+  reactStrictMode: true,
   images: {
     domains: [
       "i5.walmartimages.com",

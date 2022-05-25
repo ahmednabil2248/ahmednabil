@@ -3,16 +3,22 @@ import Image from "next/image";
 import Eye from "../../public/asset/open Hours/Eye.PNG";
 import { BiMobile } from "react-icons/bi";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 const OpiningHours = () => {
+  const router = useRouter();
+
+  let lang = router.locale === "ar";
   return (
     <div className=" mx-auto pb-5 md:h-[700px] md:my-14 md:relative overflow-hidden flex flex-col-reverse items-center justify-items-start mb-5">
       <div className="w-[320px] md:w-[400px] h-[400px] bg-[#5B7DB1] md:absolute top-[43%] left-[43%] z-10 rounded-[15px] space-y-5 pt-0 md:pt-[5rem] flex flex-col items-center justify-center">
         <h1 className="text-[30px] font-extrabold mb-5 text-black">
-          OPENING HOURS
+          {lang ? "ساعات العمل" : "OPENING HOURS"}
         </h1>
         <h1 className="text-[17px] font-extrabold text-black">
-          Saturday to Thursday from 6 to 9 pm
+          {lang
+            ? "من السبت إلى الخميس من 6 إلى 9 مساءً"
+            : "Saturday to Thursday from 6 to 9 pm"}
         </h1>
 
         <div className="flex flex-col space-y-5 text-black">
