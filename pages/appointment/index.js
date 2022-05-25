@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import Appointment from "../../component/Appointment/Appointment";
+import Appointment from "../../components/Appointment/Appointment";
 
 const appointment = () => {
   return (
