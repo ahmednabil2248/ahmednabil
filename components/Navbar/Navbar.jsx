@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
 
           <div className="hover:hover:text-black  duration-500 cursor-pointer ">
-            <Link href="/" passHref>
+            <Link href="/appointment" passHref>
               <div>{lang ? "احجز موعد " : " Book Appointment"}</div>
             </Link>
           </div>
